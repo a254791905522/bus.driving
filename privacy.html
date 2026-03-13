@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Offroad Tourist Coach Driving</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.8;
+            color: #2c3d36;
+            background: linear-gradient(180deg, #2d4a3e 0%, #1a2f26 40%, #3d5c4a 70%, #5a7a65 100%);
+            padding: 28px 24px;
+            position: relative;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        @keyframes road-move {
+            0%, 100% { transform: translateX(0); opacity: 0.3; }
+            50% { transform: translateX(6px); opacity: 0.5; }
+        }
+
+        .mountain-bg {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .mountain-bg span {
+            position: absolute;
+            font-size: 26px;
+            opacity: 0.3;
+            animation: road-move 7s ease-in-out infinite;
+        }
+
+        .mountain-bg span:nth-child(1) { top: 10%; left: 6%; animation-delay: 0s; }
+        .mountain-bg span:nth-child(2) { top: 58%; left: 90%; animation-delay: 1.8s; }
+        .mountain-bg span:nth-child(3) { top: 38%; left: 72%; animation-delay: 0.9s; }
+        .mountain-bg span:nth-child(4) { top: 78%; left: 10%; animation-delay: 2.5s; }
+        .mountain-bg span:nth-child(5) { top: 48%; left: 48%; animation-delay: 1.4s; }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card {
+            background: linear-gradient(145deg, rgba(250, 252, 251, 0.98) 0%, rgba(240, 245, 242, 0.96) 100%);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            padding: 42px 44px;
+            border-radius: 22px;
+            border: 3px solid rgba(45, 74, 62, 0.28);
+            box-shadow: 0 18px 52px rgba(0, 0, 0, 0.22),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+        }
+
+        .top-bar {
+            text-align: center;
+            margin-bottom: 36px;
+            padding-bottom: 24px;
+            border-bottom: 3px solid rgba(45, 74, 62, 0.22);
+        }
+
+        .top-bar .icon {
+            font-size: 40px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .top-bar h1 {
+            font-family: 'Oswald', sans-serif;
+            color: #1a2f26;
+            font-size: 1.9em;
+            margin-bottom: 4px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .top-bar h1 .accent {
+            color: #2d4a3e;
+        }
+
+        .app-label {
+            color: #3d5c4a;
+            font-size: 1em;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .date-line {
+            color: #5a7a65;
+            font-size: 0.88em;
+        }
+
+        .block {
+            margin-bottom: 30px;
+        }
+
+        .block:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .block h2 {
+            font-family: 'Oswald', sans-serif;
+            color: #1a2f26;
+            font-size: 1.18em;
+            font-weight: 700;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(45, 74, 62, 0.2);
+            letter-spacing: 0.3px;
+        }
+
+        .block p {
+            margin: 10px 0;
+            color: #2c3d36;
+            font-size: 1em;
+        }
+
+        .block ul {
+            margin: 12px 0;
+            padding-left: 24px;
+            list-style: square;
+        }
+
+        .block li {
+            margin: 8px 0;
+            color: #2c3d36;
+            font-size: 1em;
+            line-height: 1.7;
+        }
+
+        .block a {
+            color: #2d4a3e;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(45, 74, 62, 0.4);
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .block a:hover {
+            color: #1a2f26;
+            border-bottom-color: #1a2f26;
+        }
+
+        .block strong {
+            color: #1a2f26;
+            font-weight: 700;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, rgba(45, 74, 62, 0.08) 0%, rgba(90, 122, 101, 0.06) 100%);
+            padding: 20px 24px;
+            border-radius: 14px;
+            border: 1.5px solid rgba(45, 74, 62, 0.25);
+            margin-top: 12px;
+        }
+
+        .contact-box p {
+            margin: 6px 0;
+        }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 32px;
+            color: #f0f5f2;
+            font-weight: 700;
+            padding: 12px 28px;
+            background: linear-gradient(145deg, #3d5c4a 0%, #2d4a3e 50%, #1a3328 100%);
+            border-radius: 14px;
+            border: 2px solid rgba(90, 122, 101, 0.45);
+            transition: all 0.3s;
+            box-shadow: 0 8px 24px rgba(45, 74, 62, 0.35);
+            letter-spacing: 0.3px;
+            text-decoration: none;
+            font-family: 'Source Sans 3', sans-serif;
+        }
+
+        .btn-home:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 12px 32px rgba(45, 74, 62, 0.45);
+            color: #fff;
+        }
+
+        .btn-wrap {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .card { padding: 30px 22px; border-radius: 18px; }
+            .top-bar h1 { font-size: 1.65em; }
+            .block h2 { font-size: 1.1em; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mountain-bg">
+        <span>⛰️</span><span>🚌</span><span>🛣️</span>
+        <span>⛰️</span><span>🚌</span>
+    </div>
+
+    <div class="wrapper">
+        <div class="card">
+            <div class="top-bar">
+                <span class="icon">🚌</span>
+                <h1>Privacy <span class="accent">Policy</span></h1>
+                <p class="app-label">Offroad Tourist Coach Driving</p>
+                <p class="date-line">Effective: March 2026</p>
+            </div>
+
+            <div class="block">
+                <h2>Our Commitment to You</h2>
+                <p>Offroad Tourist Coach Driving ("the App", "we") is built by Crazy Cross Games. We respect your privacy. This document describes how we handle information when you use our mountain bus driving simulation. By installing or using the App, you accept these practices.</p>
+            </div>
+
+            <div class="block">
+                <h2>What We Do Not Collect</h2>
+                <p>We do not collect, store, or share any personal or device-related data. Specifically, we do not gather:</p>
+                <ul>
+                    <li>Contact details (name, email, phone, address)</li>
+                    <li>Identifiers (device ID, advertising ID, IP address)</li>
+                    <li>Location or geolocation information</li>
+                    <li>Gameplay or usage statistics (scores, levels, session duration)</li>
+                    <li>Any other information that could identify you or your device</li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <h2>Data Stored Only on Your Device</h2>
+                <p>Settings, progress, and preferences (e.g. sound options, unlocked content) may be saved on your device. This data never leaves your device and is not uploaded to our servers or shared with third parties. You can delete it by uninstalling the App.</p>
+            </div>
+
+            <div class="block">
+                <h2>Third-Party Links and Services</h2>
+                <p>We do not integrate analytics, ads, or social plugins that collect your data. If you follow a link from the App or this site (e.g. to the App Store), that destination has its own privacy policy, which we do not control.</p>
+            </div>
+
+            <div class="block">
+                <h2>Age Rating and Young Players</h2>
+                <p>The App is rated 13+. We do not knowingly collect information from anyone. Because we do not collect personal data, our approach is consistent with applicable privacy laws, including those relating to children (e.g. COPPA, GDPR where relevant).</p>
+            </div>
+
+            <div class="block">
+                <h2>Changes to This Policy</h2>
+                <p>We may revise this Privacy Policy occasionally. The "Effective" date above will be updated when we do. We recommend checking this page from time to time. Continued use of the App after changes means you accept the updated policy.</p>
+            </div>
+
+            <div class="block">
+                <h2>Contact</h2>
+                <p>For any questions or requests about this Privacy Policy or Offroad Tourist Coach Driving, you can reach the developer:</p>
+                <div class="contact-box">
+                    <p><strong>Developer:</strong> Sana Aslam / Crazy Cross Games</p>
+                    <p><strong>Privacy policy (web):</strong> <a href="https://ccgstudio.home.blog/" target="_blank" rel="noopener noreferrer">ccgstudio.home.blog</a></p>
+                </div>
+                <p>We aim to respond within a reasonable time.</p>
+            </div>
+
+            <div class="btn-wrap">
+                <a href="index.html" class="btn-home">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
